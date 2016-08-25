@@ -1,1 +1,46 @@
-
+<!-- contact form -->
+<div class="container" id="contact">
+ <div class="page-header">
+  <h2>Contact <small> me for any further questions.</small></h2>
+ </div>
+  
+ <div class="row">
+  <div class="col-lg-4">
+   <address>
+    <strong>Thomas Lisowsky</strong> <br />  
+    <strong>Berlin, Germany</strong> <br />
+    <strong>E-Mail: t.lisowsky@gmx.de</strong>
+   </address>
+  </div>      
+   
+  <div class="col-lg-8">
+ <form action="mailform.php" method="post" class="form-horizontal" id="contactform">
+  <div class="form-group">
+   <label for="user-name" class="col-lg-2 control-label">Name</label> 
+   <div class="col-lg-5">
+    <input type="text" name="name" class="form-control" id="user-name" placeholder="Enter your Name" required>
+   </div> 
+  </div>
+     
+  <div class="form-group">
+   <label for="user-email" class="col-lg-2 control-label">E-Mail</label>
+   <div class="col-lg-5">
+    <input type="text" name="email" class="form-control" id="user-email" placeholder="Enter your E-Mail" required>      
+   </div>
+  </div>
+     
+  <div class="form-group">
+   <label for="user-message" class="col-lg-2 control-label">Message</label>
+   <div class="col-lg-10">
+       
+    <textarea name="msg" id="user-message" class="form-control" cols="20" rows="8" placeholder="Enter your Message" required></textarea>
+   </div>
+  </div>
+     
+  <div class="form-group">
+   <div class="col-lg-10 col-lg-offset-2">
+    <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-send"></span> Submit</button>
+   </div>
+  </div>
+ </form>
+</div>
